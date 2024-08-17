@@ -1,0 +1,7 @@
+spring:
+  application.name: firestore-import
+  cloud.gcp:
+    project-id: your-gcp-project
+    credentials.encoded-key: you-service-account-key
+    firestore: 
+      project-id: ${spring.cloud.gcp.project-id}

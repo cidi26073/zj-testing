@@ -1,0 +1,3 @@
+spring:
+  application.name: flux_virtual
+  threads.virtual.enabled: true

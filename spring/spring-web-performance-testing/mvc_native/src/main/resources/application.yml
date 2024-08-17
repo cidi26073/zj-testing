@@ -1,0 +1,2 @@
+spring.application.name: native_mvc
+server.tomcat.threads.max: 200
