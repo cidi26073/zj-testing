@@ -1,0 +1,28 @@
+type Book {
+    id: ID
+    name: String
+    pageCount: Int
+    author: Author
+}
+
+type Author {
+    id: ID
+    firstName: String
+    lastName: String
+}
+
+type Query {
+    bookById(id: ID): Book
+    books: [Book]
+}
+
+type Subscription {
+    onBookPublished: Book
+}
+
+type Mutation {
+    addBook(name: String, pageCount: Int, authorId: String): Book
+    editBook(id: ID, name: String, pageCount: Int, authorId: String): Book
+    removeBook(id: ID): Boolean!
+    publishBook(id: ID): Book
+}

@@ -1,0 +1,5 @@
+spring:
+  application.name: graphql
+  graphql:
+    graphiql.enabled: true # enable web gui for graphql
+    websocket.path: /graphql # enable subscription
